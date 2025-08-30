@@ -11,23 +11,23 @@ For Users:
 
 - Browse movies, theaters, and shows
 
-Book tickets with seat selection
+- Book tickets with seat selection
 
-Cancel bookings and view history
+- Cancel bookings and view history
 
 For Admins:
 
-Register admin users
+- Register admin users
 
-Add, update, delete movies, theaters, shows
+- Add, update, delete movies, theaters, shows
 
-Manage show schedules and seats
+- Manage show schedules and seats
 
 API Endpoints with Examples
 
 AuthController
 
-POST /api/auth/registernormaluser – Register a user
+- POST /api/auth/registernormaluser – Register a user
 
 {
   "username": "john",
@@ -36,7 +36,7 @@ POST /api/auth/registernormaluser – Register a user
 }
 
 
-POST /api/auth/login – Login
+- POST /api/auth/login – Login
 
 {
   "email": "john@example.com",
@@ -46,52 +46,52 @@ POST /api/auth/login – Login
 
 AdminController
 
-POST /api/admin/registeradminuser – Create admin
+- POST /api/admin/registeradminuser – Create admin
 
 MovieController
 
-POST /api/movies/addmovie – Add a movie
+- POST /api/movies/addmovie – Add a movie
 
-GET /api/movies/getallmovies – List all movies
+- GET /api/movies/getallmovies – List all movies
 
 TheaterController
 
-POST /api/theater/addtheater – Add a theater
+- POST /api/theater/addtheater – Add a theater
 
-GET /api/theater/gettheaterbylocation?location=city – List theaters by location
+- GET /api/theater/gettheaterbylocation?location=city – List theaters by location
 
 ShowController
 
-POST /api/show/createshow – Create a show
+- POST /api/show/createshow – Create a show
 
-GET /api/show/getshowsbymovie/{id} – Get shows by movie
+- GET /api/show/getshowsbymovie/{id} – Get shows by movie
 
 BookingController
 
-POST /api/booking/createbooking – Book tickets
+- POST /api/booking/createbooking – Book tickets
 
-PUT /api/booking/{id}/cancel – Cancel booking
+- PUT /api/booking/{id}/cancel – Cancel booking
 
-GET /api/booking/getuserbookings/{id} – View user bookings
+- GET /api/booking/getuserbookings/{id} – View user bookings
 
 Tech Stack
 
-Java, Spring Boot
+- Java, Spring Boot
 
-MySQL
+- MySQL
 
-JWT for security
+- JWT for security
 
-Maven
+- Maven
 
 Installation
 
-Clone the repo: git clone <repo-url>
+1. Clone the repo: git clone <repo-url>
 
-Open in IDE as Maven project
+2. Open in IDE as Maven project
 
-Configure MySQL in application.properties
+3. Configure MySQL in application.properties
 
-Run Spring Boot app
+4. Run Spring Boot app
 
-Test APIs using Postman
+5. Test APIs using Postman
